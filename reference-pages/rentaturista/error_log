@@ -1,0 +1,403 @@
+[08-Dec-2025 10:02:04 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 618
+[08-Dec-2025 10:02:04 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 618
+[08-Dec-2025 10:34:01 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:01 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:01 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:34:01 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:34:10 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:10 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:10 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:34:10 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:34:50 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:50 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:34:50 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:34:50 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:35:22 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:35:22 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:35:22 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:35:22 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:35:59 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:35:59 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:35:59 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:35:59 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:36:04 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:36:04 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:36:04 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:36:04 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:36:06 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:36:06 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 880
+[08-Dec-2025 10:36:06 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 10:36:06 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/index.php on line 1460
+[08-Dec-2025 11:04:48 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "./includes/header.php" in /home/yvytsfpx/public_html/rentaturista/index.php on line 1737
+[08-Dec-2025 11:09:10 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "./includes/header.php" in /home/yvytsfpx/public_html/rentaturista/index.php on line 1737
+[25-Dec-2025 23:55:39 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:55:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/testadm.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:55:40 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:55:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/testadm.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:55:41 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:55:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/testadm.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/testadm.php on line 3
+[25-Dec-2025 23:56:11 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[25-Dec-2025 23:56:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[25-Dec-2025 23:56:13 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[25-Dec-2025 23:56:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[25-Dec-2025 23:59:14 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[25-Dec-2025 23:59:36 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[25-Dec-2025 23:59:37 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[25-Dec-2025 23:59:38 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[25-Dec-2025 23:59:51 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[25-Dec-2025 23:59:52 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:00:02 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:00:03 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:00:03 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:00:04 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:00:18 UTC] PHP Fatal error:  Uncaught Error: Class "Database" not found in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 22
+[26-Dec-2025 00:02:37 UTC] PHP Parse error:  Unclosed '{' on line 28 in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 1665
+[26-Dec-2025 00:02:38 UTC] PHP Parse error:  Unclosed '{' on line 28 in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 1665
+[26-Dec-2025 00:02:51 UTC] PHP Parse error:  Unclosed '{' on line 28 in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 1665
+[26-Dec-2025 00:21:39 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[26-Dec-2025 00:21:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 3
+[26-Dec-2025 03:08:25 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/config.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 10
+[26-Dec-2025 03:08:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/config.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/admin-properties.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/admin-properties.php on line 10
+[26-Dec-2025 04:03:22 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:03:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:31 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:32 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:33 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:34 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:34 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:14:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:00 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:01 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:01 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:02 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:03 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:04 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:58 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:59 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:15:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:00 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:03 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:04 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:05 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:16:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:17:27 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:17:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:22 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:24 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:24 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/../config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[26-Dec-2025 04:19:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/../config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/diagnostico.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/diagnostico.php on line 47
+[28-Dec-2025 11:09:03 UTC] PHP Warning:  include(includes/header-mapa.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/map.php on line 247
+[28-Dec-2025 11:09:03 UTC] PHP Warning:  include(): Failed opening 'includes/header-mapa.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/map.php on line 247
+[30-Dec-2025 08:19:10 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 1464
+[30-Dec-2025 08:19:10 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 1464
+[30-Dec-2025 08:19:11 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 1464
+[30-Dec-2025 08:19:11 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 1464
+[30-Dec-2025 08:30:55 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2016
+[30-Dec-2025 08:30:55 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2016
+[30-Dec-2025 08:56:37 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 08:56:37 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:00:52 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:00:52 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:08:42 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:08:42 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:05 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:05 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:18 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:18 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:25 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:12:25 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:38:06 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:38:06 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:47:07 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:47:07 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:49:30 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 09:49:30 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2021
+[30-Dec-2025 10:01:55 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2355
+[30-Dec-2025 10:01:55 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2355
+[30-Dec-2025 10:07:36 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2355
+[30-Dec-2025 10:07:36 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2355
+[30-Dec-2025 10:08:59 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2472
+[30-Dec-2025 10:08:59 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2472
+[30-Dec-2025 10:10:34 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2472
+[30-Dec-2025 10:10:34 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2472
+[30-Dec-2025 10:15:33 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2462
+[30-Dec-2025 10:15:33 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2462
+[30-Dec-2025 10:23:24 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2642
+[30-Dec-2025 10:23:24 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2642
+[30-Dec-2025 10:24:27 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2642
+[30-Dec-2025 10:24:27 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2642
+[30-Dec-2025 10:31:57 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:31:57 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:32:13 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:32:13 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:19 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:19 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:22 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:22 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:33 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:33 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:35 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:35 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:44 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:44 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:45 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:45 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:56 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:34:56 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:21 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:21 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:25 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:25 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:33 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:33 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:36 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:35:36 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:36:08 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:36:08 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:39:48 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:39:48 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:50:03 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:50:03 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:55:43 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 10:55:43 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2892
+[30-Dec-2025 12:13:16 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 12:13:16 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 12:13:28 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 12:13:28 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 12:33:25 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1199
+[30-Dec-2025 12:33:25 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1199
+[30-Dec-2025 13:15:36 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1539
+[30-Dec-2025 13:15:36 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1539
+[30-Dec-2025 13:18:45 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1539
+[30-Dec-2025 13:18:45 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1539
+[30-Dec-2025 13:22:38 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1543
+[30-Dec-2025 13:22:38 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1543
+[30-Dec-2025 13:33:37 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 13:33:37 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 13:33:56 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1469
+[30-Dec-2025 13:33:56 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1469
+[30-Dec-2025 13:35:09 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1469
+[30-Dec-2025 13:35:09 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1469
+[30-Dec-2025 13:35:20 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:35:20 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:35:45 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:35:45 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:40:35 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:40:35 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:49:28 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 13:49:28 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[30-Dec-2025 13:49:59 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:49:59 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:51:59 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:51:59 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:52:44 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:52:44 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1470
+[30-Dec-2025 13:53:36 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 13:53:36 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 13:57:48 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 13:57:48 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 23:16:48 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 23:16:48 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[30-Dec-2025 23:46:43 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 2202
+[30-Dec-2025 23:46:43 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 2202
+[31-Dec-2025 04:02:16 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[31-Dec-2025 04:02:16 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[02-Jan-2026 04:04:05 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:04:05 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:23:53 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:23:53 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:23:57 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 1459
+[02-Jan-2026 04:23:57 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 1459
+[02-Jan-2026 04:31:23 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:31:23 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:31:25 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:31:25 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:31:39 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:31:39 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:12 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:12 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:13 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:13 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:40 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:40 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:44 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:32:44 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:33:13 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:33:13 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:33:43 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:33:43 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:34:16 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:34:16 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 929
+[02-Jan-2026 04:34:39 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:34:39 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1471
+[02-Jan-2026 04:38:23 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:38:23 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:38:26 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:38:26 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:38:46 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:38:46 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:39:48 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:39:48 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[02-Jan-2026 04:41:04 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[02-Jan-2026 04:41:04 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 01:03:18 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 01:03:18 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 01:19:11 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 01:19:11 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 01:47:43 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 1459
+[03-Jan-2026 01:47:43 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividad.php on line 1459
+[03-Jan-2026 01:48:15 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 01:48:15 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 01:48:51 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 01:48:51 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 02:15:37 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 02:15:37 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:09:27 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 09:09:27 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 2910
+[03-Jan-2026 09:32:42 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista./config/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 3
+[03-Jan-2026 09:32:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista./config/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/busqueda.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/busqueda.php on line 3
+[03-Jan-2026 09:40:28 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:40:28 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:41:44 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:41:44 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:43:56 UTC] PHP Warning:  include(./includes/footer.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327
+[03-Jan-2026 09:43:56 UTC] PHP Warning:  include(): Failed opening './includes/footer.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/actividades.php on line 1327

@@ -1,0 +1,86 @@
+[26-Dec-2025 03:42:51 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:42:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:42:51 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:42:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:43:10 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:43:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:43:10 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:43:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:15 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:24 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:24 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:44:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:56:17 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:56:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:56:18 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 03:56:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 30
+[26-Dec-2025 04:00:12 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 45
+[26-Dec-2025 04:00:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 45
+[26-Dec-2025 04:00:19 UTC] PHP Warning:  require_once(/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php): Failed to open stream: No such file or directory in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 45
+[26-Dec-2025 04:00:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/yvytsfpx/public_html/rentaturista/api/../includes/Database.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/yvytsfpx/public_html/rentaturista/api/index.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/yvytsfpx/public_html/rentaturista/api/index.php on line 45
+[03-Jan-2026 09:40:29 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:40:36 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:40:36 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:40:38 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:40:53 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:40:53 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:41:22 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:41:45 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:41:47 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:41:57 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:42:08 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:42:24 UTC] Error loading required files: Archivo requerido no encontrado: PropertyController (/home/yvytsfpx/public_html/rentaturista/api/controllers/PropertyController.php)
+[03-Jan-2026 09:43:25 UTC] Error loading required files: Archivo requerido no encontrado: AvailabilityController (/home/yvytsfpx/public_html/rentaturista/api/controllers/AvailabilityController.php)
+[03-Jan-2026 09:43:25 UTC] Error loading required files: Archivo requerido no encontrado: AvailabilityController (/home/yvytsfpx/public_html/rentaturista/api/controllers/AvailabilityController.php)
+[03-Jan-2026 09:43:26 UTC] Error loading required files: Archivo requerido no encontrado: AvailabilityController (/home/yvytsfpx/public_html/rentaturista/api/controllers/AvailabilityController.php)
+[03-Jan-2026 09:43:28 UTC] Error loading required files: Archivo requerido no encontrado: AvailabilityController (/home/yvytsfpx/public_html/rentaturista/api/controllers/AvailabilityController.php)
