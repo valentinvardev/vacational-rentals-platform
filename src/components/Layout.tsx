@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Header />
-      <main style={{ paddingTop: 80, minHeight: "100vh" }}>
+      <main style={{ minHeight: "100vh" }}>
         {children}
       </main>
       <Footer />

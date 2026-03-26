@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Star, MapPin, Users, Bed, Bath, ArrowLeft, ChevronLeft, ChevronRight, Wifi, Tv, Car, Waves, Wind, Coffee } from "lucide-react";
+import { Star, MapPin, Users, Bed, Bath, ArrowLeft, ChevronLeft, ChevronRight, Wifi, Tv, Car, Waves, Wind, Coffee, CheckCircle } from "lucide-react";
 
 interface Review {
   id: number;
@@ -11,7 +11,6 @@ interface Review {
   text: string;
   created_at: string;
 }
-
 interface PropertyDetail {
   id: number;
   title: string;
@@ -23,8 +22,6 @@ interface PropertyDetail {
   guests: number;
   rating?: number;
   reviews_count?: number;
-  latitude?: number;
-  longitude?: number;
   type_name?: string;
   images?: { url: string; is_primary: boolean }[];
   amenities?: { name: string; icon?: string }[];
@@ -32,208 +29,171 @@ interface PropertyDetail {
 }
 
 const AMENITY_ICONS: Record<string, React.ReactNode> = {
-  wifi: <Wifi size={18} />,
-  tv: <Tv size={18} />,
-  parking: <Car size={18} />,
-  pool: <Waves size={18} />,
-  ac: <Wind size={18} />,
-  breakfast: <Coffee size={18} />,
+  wifi: <Wifi size={16} />, tv: <Tv size={16} />, parking: <Car size={16} />,
+  pool: <Waves size={16} />, ac: <Wind size={16} />, breakfast: <Coffee size={16} />,
 };
+
+const WA_NUMBER = "5493541123456";
 
 export default function PropiedadPage() {
   const router = useRouter();
-  const { id } = router.query;
+  const { id }  = router.query;
   const [property, setProperty] = useState<PropertyDetail | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [imgIndex, setImgIndex] = useState(0);
+  const [loading, setLoading]   = useState(true);
+  const [imgIdx, setImgIdx]     = useState(0);
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     if (!id) return;
     fetch(`/api/properties/${id as string}`)
-      .then(r => {
-        if (!r.ok) { setNotFound(true); return null; }
-        return r.json() as Promise<PropertyDetail>;
-      })
-      .then(data => { if (data) setProperty(data); })
+      .then(r => { if (!r.ok) { setNotFound(true); return null; } return r.json() as Promise<PropertyDetail>; })
+      .then(d => { if (d) setProperty(d); })
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
   }, [id]);
 
   const images = property?.images ?? [];
-  const prevImg = () => setImgIndex(i => (i - 1 + images.length) % images.length);
-  const nextImg = () => setImgIndex(i => (i + 1) % images.length);
+  const prev = () => setImgIdx(i => (i - 1 + images.length) % images.length);
+  const next = () => setImgIdx(i => (i + 1) % images.length);
 
   if (loading) return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "60vh" }}>
-      <div style={{ width: 48, height: 48, border: "4px solid #EEEEEE", borderTopColor: "#FF6B35", borderRadius: "50%", animation: "spin 0.8s linear infinite" }} />
-      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+      <div className="spinner" />
     </div>
   );
 
   if (notFound || !property) return (
-    <div style={{ textAlign: "center", padding: "6rem 2rem" }}>
-      <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "2rem", marginBottom: "1rem" }}>Propiedad no encontrada</h1>
-      <Link href="/busqueda" style={{ color: "#FF6B35", fontWeight: 600 }}>Ver todos los hospedajes</Link>
+    <div className="empty-state" style={{ paddingTop: "6rem" }}>
+      <div className="empty-state-icon">🔍</div>
+      <h3>Propiedad no encontrada</h3>
+      <p><Link href="/busqueda" style={{ color: "var(--orange-primary)", fontWeight: 600 }}>Ver todos los hospedajes</Link></p>
     </div>
   );
 
   return (
     <>
       <Head>
-        <title>{property.title} - RentaTurista</title>
+        <title>{property.title} — RentaTurista</title>
         <meta name="description" content={property.description?.slice(0, 160)} />
       </Head>
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem clamp(1.5rem, 5vw, 4rem)" }}>
-        {/* Back */}
-        <Link href="/busqueda" style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", color: "#757575", textDecoration: "none", marginBottom: "1.5rem", fontFamily: "Poppins, sans-serif", fontSize: "0.9rem" }}>
-          <ArrowLeft size={16} /> Volver a hospedajes
-        </Link>
+      <div style={{ background: "var(--white)", paddingTop: "var(--header-height)" }}>
+        <div className="property-page">
 
-        {/* Title */}
-        <div style={{ marginBottom: "1.5rem" }}>
-          {property.type_name && (
-            <span style={{ background: "rgba(255,107,53,0.1)", color: "#FF6B35", padding: "0.3rem 0.875rem", borderRadius: 50, fontSize: "0.85rem", fontWeight: 600, fontFamily: "Poppins, sans-serif" }}>
-              {property.type_name}
-            </span>
-          )}
-          <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(1.75rem, 3vw, 2.5rem)", color: "#212121", marginTop: "0.75rem", marginBottom: "0.5rem" }}>
-            {property.title}
-          </h1>
-          <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", alignItems: "center" }}>
-            <span style={{ display: "flex", alignItems: "center", gap: "0.3rem", color: "#757575", fontSize: "0.95rem" }}>
-              <MapPin size={15} /> {property.address}
-            </span>
-            {property.rating && (
-              <span style={{ display: "flex", alignItems: "center", gap: "0.3rem", fontWeight: 600 }}>
+          {/* Back */}
+          <Link href="/busqueda" className="back-btn">
+            <ArrowLeft size={16} /> Volver a hospedajes
+          </Link>
+
+          {/* Title block */}
+          {property.type_name && <span className="property-type-tag">{property.type_name}</span>}
+          <h1 className="property-title">{property.title}</h1>
+          <div className="property-meta">
+            <span className="property-meta-item"><MapPin size={15} /> {property.address}</span>
+            {property.rating != null && (
+              <span className="property-meta-item">
                 <Star size={15} style={{ fill: "#FFD700", color: "#FFD700" }} />
-                {property.rating.toFixed(1)} ({property.reviews_count ?? 0} reseñas)
+                <strong>{property.rating.toFixed(1)}</strong>
+                &nbsp;· {property.reviews_count ?? 0} reseñas
               </span>
             )}
           </div>
-        </div>
 
-        {/* Image Gallery */}
-        {images.length > 0 && (
-          <div style={{ position: "relative", borderRadius: 24, overflow: "hidden", height: 480, marginBottom: "2.5rem", background: "#F5F5F5" }}>
-            <img src={images[imgIndex]?.url} alt={property.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            {images.length > 1 && (
-              <>
-                <button onClick={prevImg} style={{ position: "absolute", left: 16, top: "50%", transform: "translateY(-50%)", background: "rgba(255,255,255,0.9)", border: "none", borderRadius: "50%", width: 44, height: 44, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
-                  <ChevronLeft size={22} />
-                </button>
-                <button onClick={nextImg} style={{ position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)", background: "rgba(255,255,255,0.9)", border: "none", borderRadius: "50%", width: 44, height: 44, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" }}>
-                  <ChevronRight size={22} />
-                </button>
-                <div style={{ position: "absolute", bottom: 16, left: "50%", transform: "translateX(-50%)", display: "flex", gap: "0.4rem" }}>
-                  {images.map((_, i) => (
-                    <button key={i} onClick={() => setImgIndex(i)} style={{ width: i === imgIndex ? 24 : 8, height: 8, borderRadius: 4, background: i === imgIndex ? "#FF6B35" : "rgba(255,255,255,0.7)", border: "none", cursor: "pointer", transition: "all 0.2s" }} />
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        )}
-
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 360px", gap: "3rem", alignItems: "start" }}>
-          {/* Left column */}
-          <div>
-            {/* Quick facts */}
-            <div style={{ display: "flex", gap: "2rem", padding: "1.5rem", background: "#FAFAFA", borderRadius: 16, marginBottom: "2rem", flexWrap: "wrap" }}>
-              {[
-                { Icon: Bed, label: `${property.beds} ${property.beds === 1 ? "habitación" : "habitaciones"}` },
-                { Icon: Bath, label: `${property.baths} ${property.baths === 1 ? "baño" : "baños"}` },
-                { Icon: Users, label: `Hasta ${property.guests} huéspedes` },
-              ].map(({ Icon, label }) => (
-                <span key={label} style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontFamily: "Poppins, sans-serif", fontWeight: 600, color: "#424242" }}>
-                  <Icon size={20} style={{ color: "#FF6B35" }} /> {label}
-                </span>
-              ))}
+          {/* Gallery */}
+          {images.length > 0 && (
+            <div className="gallery-wrapper">
+              <img src={images[imgIdx]?.url} alt={property.title} />
+              {images.length > 1 && (
+                <>
+                  <button className="gallery-nav prev" onClick={prev}><ChevronLeft size={22} /></button>
+                  <button className="gallery-nav next" onClick={next}><ChevronRight size={22} /></button>
+                  <div className="gallery-dots">
+                    {images.map((_, i) => (
+                      <button key={i} className={`gallery-dot${i === imgIdx ? " active" : ""}`} onClick={() => setImgIdx(i)} />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
+          )}
 
-            {/* Description */}
-            <section style={{ marginBottom: "2.5rem" }}>
-              <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.25rem", color: "#212121", marginBottom: "1rem" }}>Descripción</h2>
-              <p style={{ fontSize: "0.975rem", color: "#757575", lineHeight: 1.8, whiteSpace: "pre-line" }}>{property.description}</p>
-            </section>
-
-            {/* Amenities */}
-            {property.amenities && property.amenities.length > 0 && (
-              <section style={{ marginBottom: "2.5rem" }}>
-                <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.25rem", color: "#212121", marginBottom: "1rem" }}>Servicios y comodidades</h2>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: "0.75rem" }}>
-                  {property.amenities.map(a => (
-                    <div key={a.name} style={{ display: "flex", alignItems: "center", gap: "0.625rem", padding: "0.75rem 1rem", background: "#FAFAFA", borderRadius: 12, border: "1px solid #EEEEEE" }}>
-                      <span style={{ color: "#FF6B35" }}>{AMENITY_ICONS[a.icon?.toLowerCase() ?? ""] ?? "✓"}</span>
-                      <span style={{ fontSize: "0.9rem", fontWeight: 500, color: "#424242" }}>{a.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {/* Reviews */}
-            {property.reviews && property.reviews.length > 0 && (
-              <section>
-                <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "1.25rem", color: "#212121", marginBottom: "1.5rem" }}>
-                  Reseñas ({property.reviews.length})
-                </h2>
-                <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-                  {property.reviews.map(r => (
-                    <div key={r.id} style={{ padding: "1.25rem", background: "#FAFAFA", borderRadius: 16, border: "1px solid #EEEEEE" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "0.75rem" }}>
-                        <strong style={{ fontFamily: "Poppins, sans-serif", color: "#212121" }}>{r.author}</strong>
-                        <div style={{ display: "flex", gap: "0.2rem" }}>
-                          {[...Array(5)].map((_, i) => (
-                            <Star key={i} size={14} style={{ fill: i < r.rating ? "#FFD700" : "#E0E0E0", color: i < r.rating ? "#FFD700" : "#E0E0E0" }} />
-                          ))}
-                        </div>
-                      </div>
-                      <p style={{ fontSize: "0.9rem", color: "#757575", lineHeight: 1.6 }}>{r.text}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
-          </div>
-
-          {/* Booking sidebar */}
-          <div style={{ position: "sticky", top: 100 }}>
-            <div style={{ background: "#fff", borderRadius: 24, padding: "2rem", boxShadow: "0 8px 40px rgba(0,0,0,0.12)", border: "1px solid #EEEEEE" }}>
-              <div style={{ marginBottom: "1.5rem" }}>
-                <span style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "1.75rem", color: "#FF6B35" }}>
-                  ${property.price.toLocaleString("es-AR")}
-                </span>
-                <span style={{ fontSize: "0.9rem", color: "#757575" }}> / noche</span>
+          <div className="property-layout">
+            {/* Left */}
+            <div>
+              {/* Quick facts */}
+              <div className="quick-facts">
+                <span className="quick-fact"><Bed size={18} /> {property.beds} {property.beds === 1 ? "habitación" : "habitaciones"}</span>
+                <span className="quick-fact"><Bath size={18} /> {property.baths} {property.baths === 1 ? "baño" : "baños"}</span>
+                <span className="quick-fact"><Users size={18} /> Hasta {property.guests} huéspedes</span>
               </div>
 
-              {property.rating && (
-                <div style={{ display: "flex", alignItems: "center", gap: "0.4rem", marginBottom: "1.5rem", color: "#757575", fontSize: "0.9rem" }}>
-                  <Star size={15} style={{ fill: "#FFD700", color: "#FFD700" }} />
-                  <strong style={{ color: "#212121" }}>{property.rating.toFixed(1)}</strong>
-                  · {property.reviews_count} reseñas
+              {/* Description */}
+              <div className="property-section">
+                <h2 className="property-section-title">Descripción</h2>
+                <p className="description-text">{property.description}</p>
+              </div>
+
+              {/* Amenities */}
+              {property.amenities && property.amenities.length > 0 && (
+                <div className="property-section">
+                  <h2 className="property-section-title">Servicios y comodidades</h2>
+                  <div className="amenities-grid">
+                    {property.amenities.map(a => (
+                      <div key={a.name} className="amenity-item">
+                        {AMENITY_ICONS[a.icon?.toLowerCase() ?? ""] ?? <CheckCircle size={16} />}
+                        {a.name}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 
+              {/* Reviews */}
+              {property.reviews && property.reviews.length > 0 && (
+                <div className="property-section">
+                  <h2 className="property-section-title">Reseñas ({property.reviews.length})</h2>
+                  {property.reviews.map(r => (
+                    <div key={r.id} className="review-item">
+                      <div className="review-header">
+                        <span className="review-author">{r.author}</span>
+                        <div className="review-stars">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} size={14} style={{ fill: i < r.rating ? "#FFD700" : "var(--gray-300)", color: i < r.rating ? "#FFD700" : "var(--gray-300)" }} />
+                          ))}
+                        </div>
+                      </div>
+                      <p className="review-text">{r.text}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Booking card */}
+            <div className="booking-card">
+              <div className="booking-price">
+                ${property.price.toLocaleString("es-AR")}
+                <span className="booking-price-unit"> / noche</span>
+              </div>
+              {property.rating != null && (
+                <div className="booking-rating">
+                  <Star size={14} style={{ fill: "#FFD700", color: "#FFD700" }} />
+                  <strong style={{ color: "var(--gray-900)" }}>{property.rating.toFixed(1)}</strong>
+                  &nbsp;· {property.reviews_count} reseñas
+                </div>
+              )}
               <a
-                href={`https://wa.me/5493541123456?text=Hola! Me interesa la propiedad: ${encodeURIComponent(property.title)}`}
+                href={`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(`Hola! Me interesa la propiedad: ${property.title}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  display: "flex", alignItems: "center", justifyContent: "center", gap: "0.75rem",
-                  background: "#25D366", color: "#fff", padding: "1rem",
-                  borderRadius: 14, fontFamily: "Poppins, sans-serif", fontWeight: 700,
-                  textDecoration: "none", fontSize: "1rem", marginBottom: "0.75rem",
-                  boxShadow: "0 4px 16px rgba(37,211,102,0.3)",
-                }}
+                className="booking-whatsapp-btn"
               >
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516" />
+                </svg>
                 Consultar por WhatsApp
               </a>
-
-              <p style={{ fontSize: "0.82rem", color: "#757575", textAlign: "center" }}>
-                Respuesta en menos de 1 hora
-              </p>
+              <p className="booking-note">Respuesta en menos de 1 hora</p>
             </div>
           </div>
         </div>
