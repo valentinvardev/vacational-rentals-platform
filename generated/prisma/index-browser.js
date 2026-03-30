@@ -178,6 +178,9 @@ exports.Prisma.PropertyScalarFieldEnum = {
   rating: 'rating',
   reviews_count: 'reviews_count',
   type_name: 'type_name',
+  status: 'status',
+  lat: 'lat',
+  lng: 'lng',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -206,6 +209,15 @@ exports.Prisma.PropertyReviewScalarFieldEnum = {
   propertyId: 'propertyId'
 };
 
+exports.Prisma.PropertyAvailabilityScalarFieldEnum = {
+  id: 'id',
+  date: 'date',
+  status: 'status',
+  price: 'price',
+  notes: 'notes',
+  propertyId: 'propertyId'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -231,7 +243,8 @@ exports.Prisma.ModelName = {
   Property: 'Property',
   PropertyImage: 'PropertyImage',
   PropertyAmenity: 'PropertyAmenity',
-  PropertyReview: 'PropertyReview'
+  PropertyReview: 'PropertyReview',
+  PropertyAvailability: 'PropertyAvailability'
 };
 
 /**

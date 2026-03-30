@@ -75,7 +75,7 @@ model VerificationToken {
 }
 
 model Property {
-  id            Int               @id @default(autoincrement())
+  id            Int                    @id @default(autoincrement())
   title         String
   description   String?
   address       String
@@ -84,13 +84,17 @@ model Property {
   baths         Int
   guests        Int
   rating        Float?
-  reviews_count Int               @default(0)
+  reviews_count Int                    @default(0)
   type_name     String?
-  createdAt     DateTime          @default(now())
-  updatedAt     DateTime          @updatedAt
+  status        String                 @default("active")
+  lat           Float?
+  lng           Float?
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
   images        PropertyImage[]
   amenities     PropertyAmenity[]
   reviews       PropertyReview[]
+  availability  PropertyAvailability[]
 }
 
 model PropertyImage {
@@ -118,4 +122,16 @@ model PropertyReview {
   created_at DateTime @default(now())
   property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
   propertyId Int
+}
+
+model PropertyAvailability {
+  id         Int      @id @default(autoincrement())
+  date       DateTime
+  status     String   @default("available")
+  price      Int?
+  notes      String?
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int
+
+  @@unique([propertyId, date])
 }

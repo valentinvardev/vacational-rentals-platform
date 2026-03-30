@@ -58,6 +58,11 @@ export type PropertyAmenity = $Result.DefaultSelection<Prisma.$PropertyAmenityPa
  * 
  */
 export type PropertyReview = $Result.DefaultSelection<Prisma.$PropertyReviewPayload>
+/**
+ * Model PropertyAvailability
+ * 
+ */
+export type PropertyAvailability = $Result.DefaultSelection<Prisma.$PropertyAvailabilityPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -266,6 +271,16 @@ export class PrismaClient<
     * ```
     */
   get propertyReview(): Prisma.PropertyReviewDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.propertyAvailability`: Exposes CRUD operations for the **PropertyAvailability** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more PropertyAvailabilities
+    * const propertyAvailabilities = await prisma.propertyAvailability.findMany()
+    * ```
+    */
+  get propertyAvailability(): Prisma.PropertyAvailabilityDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -715,7 +730,8 @@ export namespace Prisma {
     Property: 'Property',
     PropertyImage: 'PropertyImage',
     PropertyAmenity: 'PropertyAmenity',
-    PropertyReview: 'PropertyReview'
+    PropertyReview: 'PropertyReview',
+    PropertyAvailability: 'PropertyAvailability'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -734,7 +750,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "post" | "account" | "session" | "user" | "verificationToken" | "property" | "propertyImage" | "propertyAmenity" | "propertyReview"
+      modelProps: "post" | "account" | "session" | "user" | "verificationToken" | "property" | "propertyImage" | "propertyAmenity" | "propertyReview" | "propertyAvailability"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1404,6 +1420,80 @@ export namespace Prisma {
           }
         }
       }
+      PropertyAvailability: {
+        payload: Prisma.$PropertyAvailabilityPayload<ExtArgs>
+        fields: Prisma.PropertyAvailabilityFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.PropertyAvailabilityFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.PropertyAvailabilityFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          findFirst: {
+            args: Prisma.PropertyAvailabilityFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.PropertyAvailabilityFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          findMany: {
+            args: Prisma.PropertyAvailabilityFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>[]
+          }
+          create: {
+            args: Prisma.PropertyAvailabilityCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          createMany: {
+            args: Prisma.PropertyAvailabilityCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.PropertyAvailabilityCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>[]
+          }
+          delete: {
+            args: Prisma.PropertyAvailabilityDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          update: {
+            args: Prisma.PropertyAvailabilityUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          deleteMany: {
+            args: Prisma.PropertyAvailabilityDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.PropertyAvailabilityUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.PropertyAvailabilityUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>[]
+          }
+          upsert: {
+            args: Prisma.PropertyAvailabilityUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$PropertyAvailabilityPayload>
+          }
+          aggregate: {
+            args: Prisma.PropertyAvailabilityAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregatePropertyAvailability>
+          }
+          groupBy: {
+            args: Prisma.PropertyAvailabilityGroupByArgs<ExtArgs>
+            result: $Utils.Optional<PropertyAvailabilityGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.PropertyAvailabilityCountArgs<ExtArgs>
+            result: $Utils.Optional<PropertyAvailabilityCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -1509,6 +1599,7 @@ export namespace Prisma {
     propertyImage?: PropertyImageOmit
     propertyAmenity?: PropertyAmenityOmit
     propertyReview?: PropertyReviewOmit
+    propertyAvailability?: PropertyAvailabilityOmit
   }
 
   /* Types for Logging */
@@ -1641,12 +1732,14 @@ export namespace Prisma {
     images: number
     amenities: number
     reviews: number
+    availability: number
   }
 
   export type PropertyCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     images?: boolean | PropertyCountOutputTypeCountImagesArgs
     amenities?: boolean | PropertyCountOutputTypeCountAmenitiesArgs
     reviews?: boolean | PropertyCountOutputTypeCountReviewsArgs
+    availability?: boolean | PropertyCountOutputTypeCountAvailabilityArgs
   }
 
   // Custom InputTypes
@@ -1679,6 +1772,13 @@ export namespace Prisma {
    */
   export type PropertyCountOutputTypeCountReviewsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: PropertyReviewWhereInput
+  }
+
+  /**
+   * PropertyCountOutputType without action
+   */
+  export type PropertyCountOutputTypeCountAvailabilityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: PropertyAvailabilityWhereInput
   }
 
 
@@ -7138,6 +7238,8 @@ export namespace Prisma {
     guests: number | null
     rating: number | null
     reviews_count: number | null
+    lat: number | null
+    lng: number | null
   }
 
   export type PropertySumAggregateOutputType = {
@@ -7148,6 +7250,8 @@ export namespace Prisma {
     guests: number | null
     rating: number | null
     reviews_count: number | null
+    lat: number | null
+    lng: number | null
   }
 
   export type PropertyMinAggregateOutputType = {
@@ -7162,6 +7266,9 @@ export namespace Prisma {
     rating: number | null
     reviews_count: number | null
     type_name: string | null
+    status: string | null
+    lat: number | null
+    lng: number | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -7178,6 +7285,9 @@ export namespace Prisma {
     rating: number | null
     reviews_count: number | null
     type_name: string | null
+    status: string | null
+    lat: number | null
+    lng: number | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -7194,6 +7304,9 @@ export namespace Prisma {
     rating: number
     reviews_count: number
     type_name: number
+    status: number
+    lat: number
+    lng: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -7208,6 +7321,8 @@ export namespace Prisma {
     guests?: true
     rating?: true
     reviews_count?: true
+    lat?: true
+    lng?: true
   }
 
   export type PropertySumAggregateInputType = {
@@ -7218,6 +7333,8 @@ export namespace Prisma {
     guests?: true
     rating?: true
     reviews_count?: true
+    lat?: true
+    lng?: true
   }
 
   export type PropertyMinAggregateInputType = {
@@ -7232,6 +7349,9 @@ export namespace Prisma {
     rating?: true
     reviews_count?: true
     type_name?: true
+    status?: true
+    lat?: true
+    lng?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -7248,6 +7368,9 @@ export namespace Prisma {
     rating?: true
     reviews_count?: true
     type_name?: true
+    status?: true
+    lat?: true
+    lng?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -7264,6 +7387,9 @@ export namespace Prisma {
     rating?: true
     reviews_count?: true
     type_name?: true
+    status?: true
+    lat?: true
+    lng?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -7367,6 +7493,9 @@ export namespace Prisma {
     rating: number | null
     reviews_count: number
     type_name: string | null
+    status: string
+    lat: number | null
+    lng: number | null
     createdAt: Date
     updatedAt: Date
     _count: PropertyCountAggregateOutputType | null
@@ -7402,11 +7531,15 @@ export namespace Prisma {
     rating?: boolean
     reviews_count?: boolean
     type_name?: boolean
+    status?: boolean
+    lat?: boolean
+    lng?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     images?: boolean | Property$imagesArgs<ExtArgs>
     amenities?: boolean | Property$amenitiesArgs<ExtArgs>
     reviews?: boolean | Property$reviewsArgs<ExtArgs>
+    availability?: boolean | Property$availabilityArgs<ExtArgs>
     _count?: boolean | PropertyCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["property"]>
 
@@ -7422,6 +7555,9 @@ export namespace Prisma {
     rating?: boolean
     reviews_count?: boolean
     type_name?: boolean
+    status?: boolean
+    lat?: boolean
+    lng?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["property"]>
@@ -7438,6 +7574,9 @@ export namespace Prisma {
     rating?: boolean
     reviews_count?: boolean
     type_name?: boolean
+    status?: boolean
+    lat?: boolean
+    lng?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["property"]>
@@ -7454,15 +7593,19 @@ export namespace Prisma {
     rating?: boolean
     reviews_count?: boolean
     type_name?: boolean
+    status?: boolean
+    lat?: boolean
+    lng?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type PropertyOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "description" | "address" | "price" | "beds" | "baths" | "guests" | "rating" | "reviews_count" | "type_name" | "createdAt" | "updatedAt", ExtArgs["result"]["property"]>
+  export type PropertyOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "description" | "address" | "price" | "beds" | "baths" | "guests" | "rating" | "reviews_count" | "type_name" | "status" | "lat" | "lng" | "createdAt" | "updatedAt", ExtArgs["result"]["property"]>
   export type PropertyInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     images?: boolean | Property$imagesArgs<ExtArgs>
     amenities?: boolean | Property$amenitiesArgs<ExtArgs>
     reviews?: boolean | Property$reviewsArgs<ExtArgs>
+    availability?: boolean | Property$availabilityArgs<ExtArgs>
     _count?: boolean | PropertyCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type PropertyIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -7474,6 +7617,7 @@ export namespace Prisma {
       images: Prisma.$PropertyImagePayload<ExtArgs>[]
       amenities: Prisma.$PropertyAmenityPayload<ExtArgs>[]
       reviews: Prisma.$PropertyReviewPayload<ExtArgs>[]
+      availability: Prisma.$PropertyAvailabilityPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
@@ -7487,6 +7631,9 @@ export namespace Prisma {
       rating: number | null
       reviews_count: number
       type_name: string | null
+      status: string
+      lat: number | null
+      lng: number | null
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["property"]>
@@ -7886,6 +8033,7 @@ export namespace Prisma {
     images<T extends Property$imagesArgs<ExtArgs> = {}>(args?: Subset<T, Property$imagesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyImagePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     amenities<T extends Property$amenitiesArgs<ExtArgs> = {}>(args?: Subset<T, Property$amenitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyAmenityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     reviews<T extends Property$reviewsArgs<ExtArgs> = {}>(args?: Subset<T, Property$reviewsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyReviewPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    availability<T extends Property$availabilityArgs<ExtArgs> = {}>(args?: Subset<T, Property$availabilityArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -7926,6 +8074,9 @@ export namespace Prisma {
     readonly rating: FieldRef<"Property", 'Float'>
     readonly reviews_count: FieldRef<"Property", 'Int'>
     readonly type_name: FieldRef<"Property", 'String'>
+    readonly status: FieldRef<"Property", 'String'>
+    readonly lat: FieldRef<"Property", 'Float'>
+    readonly lng: FieldRef<"Property", 'Float'>
     readonly createdAt: FieldRef<"Property", 'DateTime'>
     readonly updatedAt: FieldRef<"Property", 'DateTime'>
   }
@@ -8385,6 +8536,30 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: PropertyReviewScalarFieldEnum | PropertyReviewScalarFieldEnum[]
+  }
+
+  /**
+   * Property.availability
+   */
+  export type Property$availabilityArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    where?: PropertyAvailabilityWhereInput
+    orderBy?: PropertyAvailabilityOrderByWithRelationInput | PropertyAvailabilityOrderByWithRelationInput[]
+    cursor?: PropertyAvailabilityWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: PropertyAvailabilityScalarFieldEnum | PropertyAvailabilityScalarFieldEnum[]
   }
 
   /**
@@ -11699,6 +11874,1119 @@ export namespace Prisma {
 
 
   /**
+   * Model PropertyAvailability
+   */
+
+  export type AggregatePropertyAvailability = {
+    _count: PropertyAvailabilityCountAggregateOutputType | null
+    _avg: PropertyAvailabilityAvgAggregateOutputType | null
+    _sum: PropertyAvailabilitySumAggregateOutputType | null
+    _min: PropertyAvailabilityMinAggregateOutputType | null
+    _max: PropertyAvailabilityMaxAggregateOutputType | null
+  }
+
+  export type PropertyAvailabilityAvgAggregateOutputType = {
+    id: number | null
+    price: number | null
+    propertyId: number | null
+  }
+
+  export type PropertyAvailabilitySumAggregateOutputType = {
+    id: number | null
+    price: number | null
+    propertyId: number | null
+  }
+
+  export type PropertyAvailabilityMinAggregateOutputType = {
+    id: number | null
+    date: Date | null
+    status: string | null
+    price: number | null
+    notes: string | null
+    propertyId: number | null
+  }
+
+  export type PropertyAvailabilityMaxAggregateOutputType = {
+    id: number | null
+    date: Date | null
+    status: string | null
+    price: number | null
+    notes: string | null
+    propertyId: number | null
+  }
+
+  export type PropertyAvailabilityCountAggregateOutputType = {
+    id: number
+    date: number
+    status: number
+    price: number
+    notes: number
+    propertyId: number
+    _all: number
+  }
+
+
+  export type PropertyAvailabilityAvgAggregateInputType = {
+    id?: true
+    price?: true
+    propertyId?: true
+  }
+
+  export type PropertyAvailabilitySumAggregateInputType = {
+    id?: true
+    price?: true
+    propertyId?: true
+  }
+
+  export type PropertyAvailabilityMinAggregateInputType = {
+    id?: true
+    date?: true
+    status?: true
+    price?: true
+    notes?: true
+    propertyId?: true
+  }
+
+  export type PropertyAvailabilityMaxAggregateInputType = {
+    id?: true
+    date?: true
+    status?: true
+    price?: true
+    notes?: true
+    propertyId?: true
+  }
+
+  export type PropertyAvailabilityCountAggregateInputType = {
+    id?: true
+    date?: true
+    status?: true
+    price?: true
+    notes?: true
+    propertyId?: true
+    _all?: true
+  }
+
+  export type PropertyAvailabilityAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which PropertyAvailability to aggregate.
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of PropertyAvailabilities to fetch.
+     */
+    orderBy?: PropertyAvailabilityOrderByWithRelationInput | PropertyAvailabilityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: PropertyAvailabilityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` PropertyAvailabilities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` PropertyAvailabilities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned PropertyAvailabilities
+    **/
+    _count?: true | PropertyAvailabilityCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: PropertyAvailabilityAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: PropertyAvailabilitySumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: PropertyAvailabilityMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: PropertyAvailabilityMaxAggregateInputType
+  }
+
+  export type GetPropertyAvailabilityAggregateType<T extends PropertyAvailabilityAggregateArgs> = {
+        [P in keyof T & keyof AggregatePropertyAvailability]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregatePropertyAvailability[P]>
+      : GetScalarType<T[P], AggregatePropertyAvailability[P]>
+  }
+
+
+
+
+  export type PropertyAvailabilityGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: PropertyAvailabilityWhereInput
+    orderBy?: PropertyAvailabilityOrderByWithAggregationInput | PropertyAvailabilityOrderByWithAggregationInput[]
+    by: PropertyAvailabilityScalarFieldEnum[] | PropertyAvailabilityScalarFieldEnum
+    having?: PropertyAvailabilityScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: PropertyAvailabilityCountAggregateInputType | true
+    _avg?: PropertyAvailabilityAvgAggregateInputType
+    _sum?: PropertyAvailabilitySumAggregateInputType
+    _min?: PropertyAvailabilityMinAggregateInputType
+    _max?: PropertyAvailabilityMaxAggregateInputType
+  }
+
+  export type PropertyAvailabilityGroupByOutputType = {
+    id: number
+    date: Date
+    status: string
+    price: number | null
+    notes: string | null
+    propertyId: number
+    _count: PropertyAvailabilityCountAggregateOutputType | null
+    _avg: PropertyAvailabilityAvgAggregateOutputType | null
+    _sum: PropertyAvailabilitySumAggregateOutputType | null
+    _min: PropertyAvailabilityMinAggregateOutputType | null
+    _max: PropertyAvailabilityMaxAggregateOutputType | null
+  }
+
+  type GetPropertyAvailabilityGroupByPayload<T extends PropertyAvailabilityGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<PropertyAvailabilityGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof PropertyAvailabilityGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], PropertyAvailabilityGroupByOutputType[P]>
+            : GetScalarType<T[P], PropertyAvailabilityGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type PropertyAvailabilitySelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    status?: boolean
+    price?: boolean
+    notes?: boolean
+    propertyId?: boolean
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["propertyAvailability"]>
+
+  export type PropertyAvailabilitySelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    status?: boolean
+    price?: boolean
+    notes?: boolean
+    propertyId?: boolean
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["propertyAvailability"]>
+
+  export type PropertyAvailabilitySelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    status?: boolean
+    price?: boolean
+    notes?: boolean
+    propertyId?: boolean
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["propertyAvailability"]>
+
+  export type PropertyAvailabilitySelectScalar = {
+    id?: boolean
+    date?: boolean
+    status?: boolean
+    price?: boolean
+    notes?: boolean
+    propertyId?: boolean
+  }
+
+  export type PropertyAvailabilityOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "date" | "status" | "price" | "notes" | "propertyId", ExtArgs["result"]["propertyAvailability"]>
+  export type PropertyAvailabilityInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }
+  export type PropertyAvailabilityIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }
+  export type PropertyAvailabilityIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    property?: boolean | PropertyDefaultArgs<ExtArgs>
+  }
+
+  export type $PropertyAvailabilityPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "PropertyAvailability"
+    objects: {
+      property: Prisma.$PropertyPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: number
+      date: Date
+      status: string
+      price: number | null
+      notes: string | null
+      propertyId: number
+    }, ExtArgs["result"]["propertyAvailability"]>
+    composites: {}
+  }
+
+  type PropertyAvailabilityGetPayload<S extends boolean | null | undefined | PropertyAvailabilityDefaultArgs> = $Result.GetResult<Prisma.$PropertyAvailabilityPayload, S>
+
+  type PropertyAvailabilityCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<PropertyAvailabilityFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: PropertyAvailabilityCountAggregateInputType | true
+    }
+
+  export interface PropertyAvailabilityDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['PropertyAvailability'], meta: { name: 'PropertyAvailability' } }
+    /**
+     * Find zero or one PropertyAvailability that matches the filter.
+     * @param {PropertyAvailabilityFindUniqueArgs} args - Arguments to find a PropertyAvailability
+     * @example
+     * // Get one PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends PropertyAvailabilityFindUniqueArgs>(args: SelectSubset<T, PropertyAvailabilityFindUniqueArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one PropertyAvailability that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {PropertyAvailabilityFindUniqueOrThrowArgs} args - Arguments to find a PropertyAvailability
+     * @example
+     * // Get one PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends PropertyAvailabilityFindUniqueOrThrowArgs>(args: SelectSubset<T, PropertyAvailabilityFindUniqueOrThrowArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first PropertyAvailability that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityFindFirstArgs} args - Arguments to find a PropertyAvailability
+     * @example
+     * // Get one PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends PropertyAvailabilityFindFirstArgs>(args?: SelectSubset<T, PropertyAvailabilityFindFirstArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first PropertyAvailability that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityFindFirstOrThrowArgs} args - Arguments to find a PropertyAvailability
+     * @example
+     * // Get one PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends PropertyAvailabilityFindFirstOrThrowArgs>(args?: SelectSubset<T, PropertyAvailabilityFindFirstOrThrowArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more PropertyAvailabilities that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all PropertyAvailabilities
+     * const propertyAvailabilities = await prisma.propertyAvailability.findMany()
+     * 
+     * // Get first 10 PropertyAvailabilities
+     * const propertyAvailabilities = await prisma.propertyAvailability.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const propertyAvailabilityWithIdOnly = await prisma.propertyAvailability.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends PropertyAvailabilityFindManyArgs>(args?: SelectSubset<T, PropertyAvailabilityFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a PropertyAvailability.
+     * @param {PropertyAvailabilityCreateArgs} args - Arguments to create a PropertyAvailability.
+     * @example
+     * // Create one PropertyAvailability
+     * const PropertyAvailability = await prisma.propertyAvailability.create({
+     *   data: {
+     *     // ... data to create a PropertyAvailability
+     *   }
+     * })
+     * 
+     */
+    create<T extends PropertyAvailabilityCreateArgs>(args: SelectSubset<T, PropertyAvailabilityCreateArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many PropertyAvailabilities.
+     * @param {PropertyAvailabilityCreateManyArgs} args - Arguments to create many PropertyAvailabilities.
+     * @example
+     * // Create many PropertyAvailabilities
+     * const propertyAvailability = await prisma.propertyAvailability.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends PropertyAvailabilityCreateManyArgs>(args?: SelectSubset<T, PropertyAvailabilityCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many PropertyAvailabilities and returns the data saved in the database.
+     * @param {PropertyAvailabilityCreateManyAndReturnArgs} args - Arguments to create many PropertyAvailabilities.
+     * @example
+     * // Create many PropertyAvailabilities
+     * const propertyAvailability = await prisma.propertyAvailability.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many PropertyAvailabilities and only return the `id`
+     * const propertyAvailabilityWithIdOnly = await prisma.propertyAvailability.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends PropertyAvailabilityCreateManyAndReturnArgs>(args?: SelectSubset<T, PropertyAvailabilityCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a PropertyAvailability.
+     * @param {PropertyAvailabilityDeleteArgs} args - Arguments to delete one PropertyAvailability.
+     * @example
+     * // Delete one PropertyAvailability
+     * const PropertyAvailability = await prisma.propertyAvailability.delete({
+     *   where: {
+     *     // ... filter to delete one PropertyAvailability
+     *   }
+     * })
+     * 
+     */
+    delete<T extends PropertyAvailabilityDeleteArgs>(args: SelectSubset<T, PropertyAvailabilityDeleteArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one PropertyAvailability.
+     * @param {PropertyAvailabilityUpdateArgs} args - Arguments to update one PropertyAvailability.
+     * @example
+     * // Update one PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends PropertyAvailabilityUpdateArgs>(args: SelectSubset<T, PropertyAvailabilityUpdateArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more PropertyAvailabilities.
+     * @param {PropertyAvailabilityDeleteManyArgs} args - Arguments to filter PropertyAvailabilities to delete.
+     * @example
+     * // Delete a few PropertyAvailabilities
+     * const { count } = await prisma.propertyAvailability.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends PropertyAvailabilityDeleteManyArgs>(args?: SelectSubset<T, PropertyAvailabilityDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more PropertyAvailabilities.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many PropertyAvailabilities
+     * const propertyAvailability = await prisma.propertyAvailability.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends PropertyAvailabilityUpdateManyArgs>(args: SelectSubset<T, PropertyAvailabilityUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more PropertyAvailabilities and returns the data updated in the database.
+     * @param {PropertyAvailabilityUpdateManyAndReturnArgs} args - Arguments to update many PropertyAvailabilities.
+     * @example
+     * // Update many PropertyAvailabilities
+     * const propertyAvailability = await prisma.propertyAvailability.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more PropertyAvailabilities and only return the `id`
+     * const propertyAvailabilityWithIdOnly = await prisma.propertyAvailability.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends PropertyAvailabilityUpdateManyAndReturnArgs>(args: SelectSubset<T, PropertyAvailabilityUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one PropertyAvailability.
+     * @param {PropertyAvailabilityUpsertArgs} args - Arguments to update or create a PropertyAvailability.
+     * @example
+     * // Update or create a PropertyAvailability
+     * const propertyAvailability = await prisma.propertyAvailability.upsert({
+     *   create: {
+     *     // ... data to create a PropertyAvailability
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the PropertyAvailability we want to update
+     *   }
+     * })
+     */
+    upsert<T extends PropertyAvailabilityUpsertArgs>(args: SelectSubset<T, PropertyAvailabilityUpsertArgs<ExtArgs>>): Prisma__PropertyAvailabilityClient<$Result.GetResult<Prisma.$PropertyAvailabilityPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of PropertyAvailabilities.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityCountArgs} args - Arguments to filter PropertyAvailabilities to count.
+     * @example
+     * // Count the number of PropertyAvailabilities
+     * const count = await prisma.propertyAvailability.count({
+     *   where: {
+     *     // ... the filter for the PropertyAvailabilities we want to count
+     *   }
+     * })
+    **/
+    count<T extends PropertyAvailabilityCountArgs>(
+      args?: Subset<T, PropertyAvailabilityCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], PropertyAvailabilityCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a PropertyAvailability.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends PropertyAvailabilityAggregateArgs>(args: Subset<T, PropertyAvailabilityAggregateArgs>): Prisma.PrismaPromise<GetPropertyAvailabilityAggregateType<T>>
+
+    /**
+     * Group by PropertyAvailability.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {PropertyAvailabilityGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends PropertyAvailabilityGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: PropertyAvailabilityGroupByArgs['orderBy'] }
+        : { orderBy?: PropertyAvailabilityGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, PropertyAvailabilityGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetPropertyAvailabilityGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the PropertyAvailability model
+   */
+  readonly fields: PropertyAvailabilityFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for PropertyAvailability.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__PropertyAvailabilityClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    property<T extends PropertyDefaultArgs<ExtArgs> = {}>(args?: Subset<T, PropertyDefaultArgs<ExtArgs>>): Prisma__PropertyClient<$Result.GetResult<Prisma.$PropertyPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the PropertyAvailability model
+   */
+  interface PropertyAvailabilityFieldRefs {
+    readonly id: FieldRef<"PropertyAvailability", 'Int'>
+    readonly date: FieldRef<"PropertyAvailability", 'DateTime'>
+    readonly status: FieldRef<"PropertyAvailability", 'String'>
+    readonly price: FieldRef<"PropertyAvailability", 'Int'>
+    readonly notes: FieldRef<"PropertyAvailability", 'String'>
+    readonly propertyId: FieldRef<"PropertyAvailability", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * PropertyAvailability findUnique
+   */
+  export type PropertyAvailabilityFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter, which PropertyAvailability to fetch.
+     */
+    where: PropertyAvailabilityWhereUniqueInput
+  }
+
+  /**
+   * PropertyAvailability findUniqueOrThrow
+   */
+  export type PropertyAvailabilityFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter, which PropertyAvailability to fetch.
+     */
+    where: PropertyAvailabilityWhereUniqueInput
+  }
+
+  /**
+   * PropertyAvailability findFirst
+   */
+  export type PropertyAvailabilityFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter, which PropertyAvailability to fetch.
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of PropertyAvailabilities to fetch.
+     */
+    orderBy?: PropertyAvailabilityOrderByWithRelationInput | PropertyAvailabilityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for PropertyAvailabilities.
+     */
+    cursor?: PropertyAvailabilityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` PropertyAvailabilities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` PropertyAvailabilities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of PropertyAvailabilities.
+     */
+    distinct?: PropertyAvailabilityScalarFieldEnum | PropertyAvailabilityScalarFieldEnum[]
+  }
+
+  /**
+   * PropertyAvailability findFirstOrThrow
+   */
+  export type PropertyAvailabilityFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter, which PropertyAvailability to fetch.
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of PropertyAvailabilities to fetch.
+     */
+    orderBy?: PropertyAvailabilityOrderByWithRelationInput | PropertyAvailabilityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for PropertyAvailabilities.
+     */
+    cursor?: PropertyAvailabilityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` PropertyAvailabilities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` PropertyAvailabilities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of PropertyAvailabilities.
+     */
+    distinct?: PropertyAvailabilityScalarFieldEnum | PropertyAvailabilityScalarFieldEnum[]
+  }
+
+  /**
+   * PropertyAvailability findMany
+   */
+  export type PropertyAvailabilityFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter, which PropertyAvailabilities to fetch.
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of PropertyAvailabilities to fetch.
+     */
+    orderBy?: PropertyAvailabilityOrderByWithRelationInput | PropertyAvailabilityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing PropertyAvailabilities.
+     */
+    cursor?: PropertyAvailabilityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` PropertyAvailabilities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` PropertyAvailabilities.
+     */
+    skip?: number
+    distinct?: PropertyAvailabilityScalarFieldEnum | PropertyAvailabilityScalarFieldEnum[]
+  }
+
+  /**
+   * PropertyAvailability create
+   */
+  export type PropertyAvailabilityCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * The data needed to create a PropertyAvailability.
+     */
+    data: XOR<PropertyAvailabilityCreateInput, PropertyAvailabilityUncheckedCreateInput>
+  }
+
+  /**
+   * PropertyAvailability createMany
+   */
+  export type PropertyAvailabilityCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many PropertyAvailabilities.
+     */
+    data: PropertyAvailabilityCreateManyInput | PropertyAvailabilityCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * PropertyAvailability createManyAndReturn
+   */
+  export type PropertyAvailabilityCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * The data used to create many PropertyAvailabilities.
+     */
+    data: PropertyAvailabilityCreateManyInput | PropertyAvailabilityCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * PropertyAvailability update
+   */
+  export type PropertyAvailabilityUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * The data needed to update a PropertyAvailability.
+     */
+    data: XOR<PropertyAvailabilityUpdateInput, PropertyAvailabilityUncheckedUpdateInput>
+    /**
+     * Choose, which PropertyAvailability to update.
+     */
+    where: PropertyAvailabilityWhereUniqueInput
+  }
+
+  /**
+   * PropertyAvailability updateMany
+   */
+  export type PropertyAvailabilityUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update PropertyAvailabilities.
+     */
+    data: XOR<PropertyAvailabilityUpdateManyMutationInput, PropertyAvailabilityUncheckedUpdateManyInput>
+    /**
+     * Filter which PropertyAvailabilities to update
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * Limit how many PropertyAvailabilities to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * PropertyAvailability updateManyAndReturn
+   */
+  export type PropertyAvailabilityUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * The data used to update PropertyAvailabilities.
+     */
+    data: XOR<PropertyAvailabilityUpdateManyMutationInput, PropertyAvailabilityUncheckedUpdateManyInput>
+    /**
+     * Filter which PropertyAvailabilities to update
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * Limit how many PropertyAvailabilities to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * PropertyAvailability upsert
+   */
+  export type PropertyAvailabilityUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * The filter to search for the PropertyAvailability to update in case it exists.
+     */
+    where: PropertyAvailabilityWhereUniqueInput
+    /**
+     * In case the PropertyAvailability found by the `where` argument doesn't exist, create a new PropertyAvailability with this data.
+     */
+    create: XOR<PropertyAvailabilityCreateInput, PropertyAvailabilityUncheckedCreateInput>
+    /**
+     * In case the PropertyAvailability was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<PropertyAvailabilityUpdateInput, PropertyAvailabilityUncheckedUpdateInput>
+  }
+
+  /**
+   * PropertyAvailability delete
+   */
+  export type PropertyAvailabilityDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+    /**
+     * Filter which PropertyAvailability to delete.
+     */
+    where: PropertyAvailabilityWhereUniqueInput
+  }
+
+  /**
+   * PropertyAvailability deleteMany
+   */
+  export type PropertyAvailabilityDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which PropertyAvailabilities to delete
+     */
+    where?: PropertyAvailabilityWhereInput
+    /**
+     * Limit how many PropertyAvailabilities to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * PropertyAvailability without action
+   */
+  export type PropertyAvailabilityDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PropertyAvailability
+     */
+    select?: PropertyAvailabilitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the PropertyAvailability
+     */
+    omit?: PropertyAvailabilityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: PropertyAvailabilityInclude<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -11784,6 +13072,9 @@ export namespace Prisma {
     rating: 'rating',
     reviews_count: 'reviews_count',
     type_name: 'type_name',
+    status: 'status',
+    lat: 'lat',
+    lng: 'lng',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -11822,6 +13113,18 @@ export namespace Prisma {
   };
 
   export type PropertyReviewScalarFieldEnum = (typeof PropertyReviewScalarFieldEnum)[keyof typeof PropertyReviewScalarFieldEnum]
+
+
+  export const PropertyAvailabilityScalarFieldEnum: {
+    id: 'id',
+    date: 'date',
+    status: 'status',
+    price: 'price',
+    notes: 'notes',
+    propertyId: 'propertyId'
+  };
+
+  export type PropertyAvailabilityScalarFieldEnum = (typeof PropertyAvailabilityScalarFieldEnum)[keyof typeof PropertyAvailabilityScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -12243,11 +13546,15 @@ export namespace Prisma {
     rating?: FloatNullableFilter<"Property"> | number | null
     reviews_count?: IntFilter<"Property"> | number
     type_name?: StringNullableFilter<"Property"> | string | null
+    status?: StringFilter<"Property"> | string
+    lat?: FloatNullableFilter<"Property"> | number | null
+    lng?: FloatNullableFilter<"Property"> | number | null
     createdAt?: DateTimeFilter<"Property"> | Date | string
     updatedAt?: DateTimeFilter<"Property"> | Date | string
     images?: PropertyImageListRelationFilter
     amenities?: PropertyAmenityListRelationFilter
     reviews?: PropertyReviewListRelationFilter
+    availability?: PropertyAvailabilityListRelationFilter
   }
 
   export type PropertyOrderByWithRelationInput = {
@@ -12262,11 +13569,15 @@ export namespace Prisma {
     rating?: SortOrderInput | SortOrder
     reviews_count?: SortOrder
     type_name?: SortOrderInput | SortOrder
+    status?: SortOrder
+    lat?: SortOrderInput | SortOrder
+    lng?: SortOrderInput | SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     images?: PropertyImageOrderByRelationAggregateInput
     amenities?: PropertyAmenityOrderByRelationAggregateInput
     reviews?: PropertyReviewOrderByRelationAggregateInput
+    availability?: PropertyAvailabilityOrderByRelationAggregateInput
   }
 
   export type PropertyWhereUniqueInput = Prisma.AtLeast<{
@@ -12284,11 +13595,15 @@ export namespace Prisma {
     rating?: FloatNullableFilter<"Property"> | number | null
     reviews_count?: IntFilter<"Property"> | number
     type_name?: StringNullableFilter<"Property"> | string | null
+    status?: StringFilter<"Property"> | string
+    lat?: FloatNullableFilter<"Property"> | number | null
+    lng?: FloatNullableFilter<"Property"> | number | null
     createdAt?: DateTimeFilter<"Property"> | Date | string
     updatedAt?: DateTimeFilter<"Property"> | Date | string
     images?: PropertyImageListRelationFilter
     amenities?: PropertyAmenityListRelationFilter
     reviews?: PropertyReviewListRelationFilter
+    availability?: PropertyAvailabilityListRelationFilter
   }, "id">
 
   export type PropertyOrderByWithAggregationInput = {
@@ -12303,6 +13618,9 @@ export namespace Prisma {
     rating?: SortOrderInput | SortOrder
     reviews_count?: SortOrder
     type_name?: SortOrderInput | SortOrder
+    status?: SortOrder
+    lat?: SortOrderInput | SortOrder
+    lng?: SortOrderInput | SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: PropertyCountOrderByAggregateInput
@@ -12327,6 +13645,9 @@ export namespace Prisma {
     rating?: FloatNullableWithAggregatesFilter<"Property"> | number | null
     reviews_count?: IntWithAggregatesFilter<"Property"> | number
     type_name?: StringNullableWithAggregatesFilter<"Property"> | string | null
+    status?: StringWithAggregatesFilter<"Property"> | string
+    lat?: FloatNullableWithAggregatesFilter<"Property"> | number | null
+    lng?: FloatNullableWithAggregatesFilter<"Property"> | number | null
     createdAt?: DateTimeWithAggregatesFilter<"Property"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"Property"> | Date | string
   }
@@ -12500,6 +13821,69 @@ export namespace Prisma {
     status?: StringWithAggregatesFilter<"PropertyReview"> | string
     created_at?: DateTimeWithAggregatesFilter<"PropertyReview"> | Date | string
     propertyId?: IntWithAggregatesFilter<"PropertyReview"> | number
+  }
+
+  export type PropertyAvailabilityWhereInput = {
+    AND?: PropertyAvailabilityWhereInput | PropertyAvailabilityWhereInput[]
+    OR?: PropertyAvailabilityWhereInput[]
+    NOT?: PropertyAvailabilityWhereInput | PropertyAvailabilityWhereInput[]
+    id?: IntFilter<"PropertyAvailability"> | number
+    date?: DateTimeFilter<"PropertyAvailability"> | Date | string
+    status?: StringFilter<"PropertyAvailability"> | string
+    price?: IntNullableFilter<"PropertyAvailability"> | number | null
+    notes?: StringNullableFilter<"PropertyAvailability"> | string | null
+    propertyId?: IntFilter<"PropertyAvailability"> | number
+    property?: XOR<PropertyScalarRelationFilter, PropertyWhereInput>
+  }
+
+  export type PropertyAvailabilityOrderByWithRelationInput = {
+    id?: SortOrder
+    date?: SortOrder
+    status?: SortOrder
+    price?: SortOrderInput | SortOrder
+    notes?: SortOrderInput | SortOrder
+    propertyId?: SortOrder
+    property?: PropertyOrderByWithRelationInput
+  }
+
+  export type PropertyAvailabilityWhereUniqueInput = Prisma.AtLeast<{
+    id?: number
+    propertyId_date?: PropertyAvailabilityPropertyIdDateCompoundUniqueInput
+    AND?: PropertyAvailabilityWhereInput | PropertyAvailabilityWhereInput[]
+    OR?: PropertyAvailabilityWhereInput[]
+    NOT?: PropertyAvailabilityWhereInput | PropertyAvailabilityWhereInput[]
+    date?: DateTimeFilter<"PropertyAvailability"> | Date | string
+    status?: StringFilter<"PropertyAvailability"> | string
+    price?: IntNullableFilter<"PropertyAvailability"> | number | null
+    notes?: StringNullableFilter<"PropertyAvailability"> | string | null
+    propertyId?: IntFilter<"PropertyAvailability"> | number
+    property?: XOR<PropertyScalarRelationFilter, PropertyWhereInput>
+  }, "id" | "propertyId_date">
+
+  export type PropertyAvailabilityOrderByWithAggregationInput = {
+    id?: SortOrder
+    date?: SortOrder
+    status?: SortOrder
+    price?: SortOrderInput | SortOrder
+    notes?: SortOrderInput | SortOrder
+    propertyId?: SortOrder
+    _count?: PropertyAvailabilityCountOrderByAggregateInput
+    _avg?: PropertyAvailabilityAvgOrderByAggregateInput
+    _max?: PropertyAvailabilityMaxOrderByAggregateInput
+    _min?: PropertyAvailabilityMinOrderByAggregateInput
+    _sum?: PropertyAvailabilitySumOrderByAggregateInput
+  }
+
+  export type PropertyAvailabilityScalarWhereWithAggregatesInput = {
+    AND?: PropertyAvailabilityScalarWhereWithAggregatesInput | PropertyAvailabilityScalarWhereWithAggregatesInput[]
+    OR?: PropertyAvailabilityScalarWhereWithAggregatesInput[]
+    NOT?: PropertyAvailabilityScalarWhereWithAggregatesInput | PropertyAvailabilityScalarWhereWithAggregatesInput[]
+    id?: IntWithAggregatesFilter<"PropertyAvailability"> | number
+    date?: DateTimeWithAggregatesFilter<"PropertyAvailability"> | Date | string
+    status?: StringWithAggregatesFilter<"PropertyAvailability"> | string
+    price?: IntNullableWithAggregatesFilter<"PropertyAvailability"> | number | null
+    notes?: StringNullableWithAggregatesFilter<"PropertyAvailability"> | string | null
+    propertyId?: IntWithAggregatesFilter<"PropertyAvailability"> | number
   }
 
   export type PostCreateInput = {
@@ -12834,11 +14218,15 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageCreateNestedManyWithoutPropertyInput
     amenities?: PropertyAmenityCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyUncheckedCreateInput = {
@@ -12853,11 +14241,15 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageUncheckedCreateNestedManyWithoutPropertyInput
     amenities?: PropertyAmenityUncheckedCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewUncheckedCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityUncheckedCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyUpdateInput = {
@@ -12871,11 +14263,15 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUpdateManyWithoutPropertyNestedInput
     amenities?: PropertyAmenityUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyUncheckedUpdateInput = {
@@ -12890,11 +14286,15 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUncheckedUpdateManyWithoutPropertyNestedInput
     amenities?: PropertyAmenityUncheckedUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUncheckedUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUncheckedUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyCreateManyInput = {
@@ -12909,6 +14309,9 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -12924,6 +14327,9 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -12940,6 +14346,9 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -13097,6 +14506,65 @@ export namespace Prisma {
     text?: StringFieldUpdateOperationsInput | string
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+    propertyId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type PropertyAvailabilityCreateInput = {
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+    property: PropertyCreateNestedOneWithoutAvailabilityInput
+  }
+
+  export type PropertyAvailabilityUncheckedCreateInput = {
+    id?: number
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+    propertyId: number
+  }
+
+  export type PropertyAvailabilityUpdateInput = {
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
+    property?: PropertyUpdateOneRequiredWithoutAvailabilityNestedInput
+  }
+
+  export type PropertyAvailabilityUncheckedUpdateInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
+    propertyId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type PropertyAvailabilityCreateManyInput = {
+    id?: number
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+    propertyId: number
+  }
+
+  export type PropertyAvailabilityUpdateManyMutationInput = {
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type PropertyAvailabilityUncheckedUpdateManyInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
     propertyId?: IntFieldUpdateOperationsInput | number
   }
 
@@ -13502,6 +14970,12 @@ export namespace Prisma {
     none?: PropertyReviewWhereInput
   }
 
+  export type PropertyAvailabilityListRelationFilter = {
+    every?: PropertyAvailabilityWhereInput
+    some?: PropertyAvailabilityWhereInput
+    none?: PropertyAvailabilityWhereInput
+  }
+
   export type PropertyImageOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
@@ -13511,6 +14985,10 @@ export namespace Prisma {
   }
 
   export type PropertyReviewOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type PropertyAvailabilityOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
@@ -13526,6 +15004,9 @@ export namespace Prisma {
     rating?: SortOrder
     reviews_count?: SortOrder
     type_name?: SortOrder
+    status?: SortOrder
+    lat?: SortOrder
+    lng?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -13538,6 +15019,8 @@ export namespace Prisma {
     guests?: SortOrder
     rating?: SortOrder
     reviews_count?: SortOrder
+    lat?: SortOrder
+    lng?: SortOrder
   }
 
   export type PropertyMaxOrderByAggregateInput = {
@@ -13552,6 +15035,9 @@ export namespace Prisma {
     rating?: SortOrder
     reviews_count?: SortOrder
     type_name?: SortOrder
+    status?: SortOrder
+    lat?: SortOrder
+    lng?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -13568,6 +15054,9 @@ export namespace Prisma {
     rating?: SortOrder
     reviews_count?: SortOrder
     type_name?: SortOrder
+    status?: SortOrder
+    lat?: SortOrder
+    lng?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -13580,6 +15069,8 @@ export namespace Prisma {
     guests?: SortOrder
     rating?: SortOrder
     reviews_count?: SortOrder
+    lat?: SortOrder
+    lng?: SortOrder
   }
 
   export type FloatNullableWithAggregatesFilter<$PrismaModel = never> = {
@@ -13717,6 +15208,50 @@ export namespace Prisma {
   export type PropertyReviewSumOrderByAggregateInput = {
     id?: SortOrder
     rating?: SortOrder
+    propertyId?: SortOrder
+  }
+
+  export type PropertyAvailabilityPropertyIdDateCompoundUniqueInput = {
+    propertyId: number
+    date: Date | string
+  }
+
+  export type PropertyAvailabilityCountOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    status?: SortOrder
+    price?: SortOrder
+    notes?: SortOrder
+    propertyId?: SortOrder
+  }
+
+  export type PropertyAvailabilityAvgOrderByAggregateInput = {
+    id?: SortOrder
+    price?: SortOrder
+    propertyId?: SortOrder
+  }
+
+  export type PropertyAvailabilityMaxOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    status?: SortOrder
+    price?: SortOrder
+    notes?: SortOrder
+    propertyId?: SortOrder
+  }
+
+  export type PropertyAvailabilityMinOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    status?: SortOrder
+    price?: SortOrder
+    notes?: SortOrder
+    propertyId?: SortOrder
+  }
+
+  export type PropertyAvailabilitySumOrderByAggregateInput = {
+    id?: SortOrder
+    price?: SortOrder
     propertyId?: SortOrder
   }
 
@@ -13941,6 +15476,13 @@ export namespace Prisma {
     connect?: PropertyReviewWhereUniqueInput | PropertyReviewWhereUniqueInput[]
   }
 
+  export type PropertyAvailabilityCreateNestedManyWithoutPropertyInput = {
+    create?: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput> | PropertyAvailabilityCreateWithoutPropertyInput[] | PropertyAvailabilityUncheckedCreateWithoutPropertyInput[]
+    connectOrCreate?: PropertyAvailabilityCreateOrConnectWithoutPropertyInput | PropertyAvailabilityCreateOrConnectWithoutPropertyInput[]
+    createMany?: PropertyAvailabilityCreateManyPropertyInputEnvelope
+    connect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+  }
+
   export type PropertyImageUncheckedCreateNestedManyWithoutPropertyInput = {
     create?: XOR<PropertyImageCreateWithoutPropertyInput, PropertyImageUncheckedCreateWithoutPropertyInput> | PropertyImageCreateWithoutPropertyInput[] | PropertyImageUncheckedCreateWithoutPropertyInput[]
     connectOrCreate?: PropertyImageCreateOrConnectWithoutPropertyInput | PropertyImageCreateOrConnectWithoutPropertyInput[]
@@ -13960,6 +15502,13 @@ export namespace Prisma {
     connectOrCreate?: PropertyReviewCreateOrConnectWithoutPropertyInput | PropertyReviewCreateOrConnectWithoutPropertyInput[]
     createMany?: PropertyReviewCreateManyPropertyInputEnvelope
     connect?: PropertyReviewWhereUniqueInput | PropertyReviewWhereUniqueInput[]
+  }
+
+  export type PropertyAvailabilityUncheckedCreateNestedManyWithoutPropertyInput = {
+    create?: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput> | PropertyAvailabilityCreateWithoutPropertyInput[] | PropertyAvailabilityUncheckedCreateWithoutPropertyInput[]
+    connectOrCreate?: PropertyAvailabilityCreateOrConnectWithoutPropertyInput | PropertyAvailabilityCreateOrConnectWithoutPropertyInput[]
+    createMany?: PropertyAvailabilityCreateManyPropertyInputEnvelope
+    connect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
   }
 
   export type NullableFloatFieldUpdateOperationsInput = {
@@ -14012,6 +15561,20 @@ export namespace Prisma {
     deleteMany?: PropertyReviewScalarWhereInput | PropertyReviewScalarWhereInput[]
   }
 
+  export type PropertyAvailabilityUpdateManyWithoutPropertyNestedInput = {
+    create?: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput> | PropertyAvailabilityCreateWithoutPropertyInput[] | PropertyAvailabilityUncheckedCreateWithoutPropertyInput[]
+    connectOrCreate?: PropertyAvailabilityCreateOrConnectWithoutPropertyInput | PropertyAvailabilityCreateOrConnectWithoutPropertyInput[]
+    upsert?: PropertyAvailabilityUpsertWithWhereUniqueWithoutPropertyInput | PropertyAvailabilityUpsertWithWhereUniqueWithoutPropertyInput[]
+    createMany?: PropertyAvailabilityCreateManyPropertyInputEnvelope
+    set?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    disconnect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    delete?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    connect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    update?: PropertyAvailabilityUpdateWithWhereUniqueWithoutPropertyInput | PropertyAvailabilityUpdateWithWhereUniqueWithoutPropertyInput[]
+    updateMany?: PropertyAvailabilityUpdateManyWithWhereWithoutPropertyInput | PropertyAvailabilityUpdateManyWithWhereWithoutPropertyInput[]
+    deleteMany?: PropertyAvailabilityScalarWhereInput | PropertyAvailabilityScalarWhereInput[]
+  }
+
   export type PropertyImageUncheckedUpdateManyWithoutPropertyNestedInput = {
     create?: XOR<PropertyImageCreateWithoutPropertyInput, PropertyImageUncheckedCreateWithoutPropertyInput> | PropertyImageCreateWithoutPropertyInput[] | PropertyImageUncheckedCreateWithoutPropertyInput[]
     connectOrCreate?: PropertyImageCreateOrConnectWithoutPropertyInput | PropertyImageCreateOrConnectWithoutPropertyInput[]
@@ -14052,6 +15615,20 @@ export namespace Prisma {
     update?: PropertyReviewUpdateWithWhereUniqueWithoutPropertyInput | PropertyReviewUpdateWithWhereUniqueWithoutPropertyInput[]
     updateMany?: PropertyReviewUpdateManyWithWhereWithoutPropertyInput | PropertyReviewUpdateManyWithWhereWithoutPropertyInput[]
     deleteMany?: PropertyReviewScalarWhereInput | PropertyReviewScalarWhereInput[]
+  }
+
+  export type PropertyAvailabilityUncheckedUpdateManyWithoutPropertyNestedInput = {
+    create?: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput> | PropertyAvailabilityCreateWithoutPropertyInput[] | PropertyAvailabilityUncheckedCreateWithoutPropertyInput[]
+    connectOrCreate?: PropertyAvailabilityCreateOrConnectWithoutPropertyInput | PropertyAvailabilityCreateOrConnectWithoutPropertyInput[]
+    upsert?: PropertyAvailabilityUpsertWithWhereUniqueWithoutPropertyInput | PropertyAvailabilityUpsertWithWhereUniqueWithoutPropertyInput[]
+    createMany?: PropertyAvailabilityCreateManyPropertyInputEnvelope
+    set?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    disconnect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    delete?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    connect?: PropertyAvailabilityWhereUniqueInput | PropertyAvailabilityWhereUniqueInput[]
+    update?: PropertyAvailabilityUpdateWithWhereUniqueWithoutPropertyInput | PropertyAvailabilityUpdateWithWhereUniqueWithoutPropertyInput[]
+    updateMany?: PropertyAvailabilityUpdateManyWithWhereWithoutPropertyInput | PropertyAvailabilityUpdateManyWithWhereWithoutPropertyInput[]
+    deleteMany?: PropertyAvailabilityScalarWhereInput | PropertyAvailabilityScalarWhereInput[]
   }
 
   export type PropertyCreateNestedOneWithoutImagesInput = {
@@ -14098,6 +15675,20 @@ export namespace Prisma {
     upsert?: PropertyUpsertWithoutReviewsInput
     connect?: PropertyWhereUniqueInput
     update?: XOR<XOR<PropertyUpdateToOneWithWhereWithoutReviewsInput, PropertyUpdateWithoutReviewsInput>, PropertyUncheckedUpdateWithoutReviewsInput>
+  }
+
+  export type PropertyCreateNestedOneWithoutAvailabilityInput = {
+    create?: XOR<PropertyCreateWithoutAvailabilityInput, PropertyUncheckedCreateWithoutAvailabilityInput>
+    connectOrCreate?: PropertyCreateOrConnectWithoutAvailabilityInput
+    connect?: PropertyWhereUniqueInput
+  }
+
+  export type PropertyUpdateOneRequiredWithoutAvailabilityNestedInput = {
+    create?: XOR<PropertyCreateWithoutAvailabilityInput, PropertyUncheckedCreateWithoutAvailabilityInput>
+    connectOrCreate?: PropertyCreateOrConnectWithoutAvailabilityInput
+    upsert?: PropertyUpsertWithoutAvailabilityInput
+    connect?: PropertyWhereUniqueInput
+    update?: XOR<XOR<PropertyUpdateToOneWithWhereWithoutAvailabilityInput, PropertyUpdateWithoutAvailabilityInput>, PropertyUncheckedUpdateWithoutAvailabilityInput>
   }
 
   export type NestedIntFilter<$PrismaModel = never> = {
@@ -14727,6 +16318,31 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
+  export type PropertyAvailabilityCreateWithoutPropertyInput = {
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+  }
+
+  export type PropertyAvailabilityUncheckedCreateWithoutPropertyInput = {
+    id?: number
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+  }
+
+  export type PropertyAvailabilityCreateOrConnectWithoutPropertyInput = {
+    where: PropertyAvailabilityWhereUniqueInput
+    create: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput>
+  }
+
+  export type PropertyAvailabilityCreateManyPropertyInputEnvelope = {
+    data: PropertyAvailabilityCreateManyPropertyInput | PropertyAvailabilityCreateManyPropertyInput[]
+    skipDuplicates?: boolean
+  }
+
   export type PropertyImageUpsertWithWhereUniqueWithoutPropertyInput = {
     where: PropertyImageWhereUniqueInput
     update: XOR<PropertyImageUpdateWithoutPropertyInput, PropertyImageUncheckedUpdateWithoutPropertyInput>
@@ -14808,6 +16424,34 @@ export namespace Prisma {
     propertyId?: IntFilter<"PropertyReview"> | number
   }
 
+  export type PropertyAvailabilityUpsertWithWhereUniqueWithoutPropertyInput = {
+    where: PropertyAvailabilityWhereUniqueInput
+    update: XOR<PropertyAvailabilityUpdateWithoutPropertyInput, PropertyAvailabilityUncheckedUpdateWithoutPropertyInput>
+    create: XOR<PropertyAvailabilityCreateWithoutPropertyInput, PropertyAvailabilityUncheckedCreateWithoutPropertyInput>
+  }
+
+  export type PropertyAvailabilityUpdateWithWhereUniqueWithoutPropertyInput = {
+    where: PropertyAvailabilityWhereUniqueInput
+    data: XOR<PropertyAvailabilityUpdateWithoutPropertyInput, PropertyAvailabilityUncheckedUpdateWithoutPropertyInput>
+  }
+
+  export type PropertyAvailabilityUpdateManyWithWhereWithoutPropertyInput = {
+    where: PropertyAvailabilityScalarWhereInput
+    data: XOR<PropertyAvailabilityUpdateManyMutationInput, PropertyAvailabilityUncheckedUpdateManyWithoutPropertyInput>
+  }
+
+  export type PropertyAvailabilityScalarWhereInput = {
+    AND?: PropertyAvailabilityScalarWhereInput | PropertyAvailabilityScalarWhereInput[]
+    OR?: PropertyAvailabilityScalarWhereInput[]
+    NOT?: PropertyAvailabilityScalarWhereInput | PropertyAvailabilityScalarWhereInput[]
+    id?: IntFilter<"PropertyAvailability"> | number
+    date?: DateTimeFilter<"PropertyAvailability"> | Date | string
+    status?: StringFilter<"PropertyAvailability"> | string
+    price?: IntNullableFilter<"PropertyAvailability"> | number | null
+    notes?: StringNullableFilter<"PropertyAvailability"> | string | null
+    propertyId?: IntFilter<"PropertyAvailability"> | number
+  }
+
   export type PropertyCreateWithoutImagesInput = {
     title: string
     description?: string | null
@@ -14819,10 +16463,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     amenities?: PropertyAmenityCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyUncheckedCreateWithoutImagesInput = {
@@ -14837,10 +16485,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     amenities?: PropertyAmenityUncheckedCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewUncheckedCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityUncheckedCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyCreateOrConnectWithoutImagesInput = {
@@ -14870,10 +16522,14 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     amenities?: PropertyAmenityUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyUncheckedUpdateWithoutImagesInput = {
@@ -14888,10 +16544,14 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     amenities?: PropertyAmenityUncheckedUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUncheckedUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUncheckedUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyCreateWithoutAmenitiesInput = {
@@ -14905,10 +16565,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyUncheckedCreateWithoutAmenitiesInput = {
@@ -14923,10 +16587,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageUncheckedCreateNestedManyWithoutPropertyInput
     reviews?: PropertyReviewUncheckedCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityUncheckedCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyCreateOrConnectWithoutAmenitiesInput = {
@@ -14956,10 +16624,14 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyUncheckedUpdateWithoutAmenitiesInput = {
@@ -14974,10 +16646,14 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUncheckedUpdateManyWithoutPropertyNestedInput
     reviews?: PropertyReviewUncheckedUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUncheckedUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyCreateWithoutReviewsInput = {
@@ -14991,10 +16667,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageCreateNestedManyWithoutPropertyInput
     amenities?: PropertyAmenityCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyUncheckedCreateWithoutReviewsInput = {
@@ -15009,10 +16689,14 @@ export namespace Prisma {
     rating?: number | null
     reviews_count?: number
     type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
     createdAt?: Date | string
     updatedAt?: Date | string
     images?: PropertyImageUncheckedCreateNestedManyWithoutPropertyInput
     amenities?: PropertyAmenityUncheckedCreateNestedManyWithoutPropertyInput
+    availability?: PropertyAvailabilityUncheckedCreateNestedManyWithoutPropertyInput
   }
 
   export type PropertyCreateOrConnectWithoutReviewsInput = {
@@ -15042,10 +16726,14 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUpdateManyWithoutPropertyNestedInput
     amenities?: PropertyAmenityUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUpdateManyWithoutPropertyNestedInput
   }
 
   export type PropertyUncheckedUpdateWithoutReviewsInput = {
@@ -15060,10 +16748,116 @@ export namespace Prisma {
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
     reviews_count?: IntFieldUpdateOperationsInput | number
     type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     images?: PropertyImageUncheckedUpdateManyWithoutPropertyNestedInput
     amenities?: PropertyAmenityUncheckedUpdateManyWithoutPropertyNestedInput
+    availability?: PropertyAvailabilityUncheckedUpdateManyWithoutPropertyNestedInput
+  }
+
+  export type PropertyCreateWithoutAvailabilityInput = {
+    title: string
+    description?: string | null
+    address: string
+    price: number
+    beds: number
+    baths: number
+    guests: number
+    rating?: number | null
+    reviews_count?: number
+    type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    images?: PropertyImageCreateNestedManyWithoutPropertyInput
+    amenities?: PropertyAmenityCreateNestedManyWithoutPropertyInput
+    reviews?: PropertyReviewCreateNestedManyWithoutPropertyInput
+  }
+
+  export type PropertyUncheckedCreateWithoutAvailabilityInput = {
+    id?: number
+    title: string
+    description?: string | null
+    address: string
+    price: number
+    beds: number
+    baths: number
+    guests: number
+    rating?: number | null
+    reviews_count?: number
+    type_name?: string | null
+    status?: string
+    lat?: number | null
+    lng?: number | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    images?: PropertyImageUncheckedCreateNestedManyWithoutPropertyInput
+    amenities?: PropertyAmenityUncheckedCreateNestedManyWithoutPropertyInput
+    reviews?: PropertyReviewUncheckedCreateNestedManyWithoutPropertyInput
+  }
+
+  export type PropertyCreateOrConnectWithoutAvailabilityInput = {
+    where: PropertyWhereUniqueInput
+    create: XOR<PropertyCreateWithoutAvailabilityInput, PropertyUncheckedCreateWithoutAvailabilityInput>
+  }
+
+  export type PropertyUpsertWithoutAvailabilityInput = {
+    update: XOR<PropertyUpdateWithoutAvailabilityInput, PropertyUncheckedUpdateWithoutAvailabilityInput>
+    create: XOR<PropertyCreateWithoutAvailabilityInput, PropertyUncheckedCreateWithoutAvailabilityInput>
+    where?: PropertyWhereInput
+  }
+
+  export type PropertyUpdateToOneWithWhereWithoutAvailabilityInput = {
+    where?: PropertyWhereInput
+    data: XOR<PropertyUpdateWithoutAvailabilityInput, PropertyUncheckedUpdateWithoutAvailabilityInput>
+  }
+
+  export type PropertyUpdateWithoutAvailabilityInput = {
+    title?: StringFieldUpdateOperationsInput | string
+    description?: NullableStringFieldUpdateOperationsInput | string | null
+    address?: StringFieldUpdateOperationsInput | string
+    price?: IntFieldUpdateOperationsInput | number
+    beds?: IntFieldUpdateOperationsInput | number
+    baths?: IntFieldUpdateOperationsInput | number
+    guests?: IntFieldUpdateOperationsInput | number
+    rating?: NullableFloatFieldUpdateOperationsInput | number | null
+    reviews_count?: IntFieldUpdateOperationsInput | number
+    type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    images?: PropertyImageUpdateManyWithoutPropertyNestedInput
+    amenities?: PropertyAmenityUpdateManyWithoutPropertyNestedInput
+    reviews?: PropertyReviewUpdateManyWithoutPropertyNestedInput
+  }
+
+  export type PropertyUncheckedUpdateWithoutAvailabilityInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    title?: StringFieldUpdateOperationsInput | string
+    description?: NullableStringFieldUpdateOperationsInput | string | null
+    address?: StringFieldUpdateOperationsInput | string
+    price?: IntFieldUpdateOperationsInput | number
+    beds?: IntFieldUpdateOperationsInput | number
+    baths?: IntFieldUpdateOperationsInput | number
+    guests?: IntFieldUpdateOperationsInput | number
+    rating?: NullableFloatFieldUpdateOperationsInput | number | null
+    reviews_count?: IntFieldUpdateOperationsInput | number
+    type_name?: NullableStringFieldUpdateOperationsInput | string | null
+    status?: StringFieldUpdateOperationsInput | string
+    lat?: NullableFloatFieldUpdateOperationsInput | number | null
+    lng?: NullableFloatFieldUpdateOperationsInput | number | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    images?: PropertyImageUncheckedUpdateManyWithoutPropertyNestedInput
+    amenities?: PropertyAmenityUncheckedUpdateManyWithoutPropertyNestedInput
+    reviews?: PropertyReviewUncheckedUpdateManyWithoutPropertyNestedInput
   }
 
   export type AccountCreateManyUserInput = {
@@ -15198,6 +16992,14 @@ export namespace Prisma {
     created_at?: Date | string
   }
 
+  export type PropertyAvailabilityCreateManyPropertyInput = {
+    id?: number
+    date: Date | string
+    status?: string
+    price?: number | null
+    notes?: string | null
+  }
+
   export type PropertyImageUpdateWithoutPropertyInput = {
     url?: StringFieldUpdateOperationsInput | string
     is_primary?: BoolFieldUpdateOperationsInput | boolean
@@ -15256,6 +17058,29 @@ export namespace Prisma {
     text?: StringFieldUpdateOperationsInput | string
     status?: StringFieldUpdateOperationsInput | string
     created_at?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type PropertyAvailabilityUpdateWithoutPropertyInput = {
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type PropertyAvailabilityUncheckedUpdateWithoutPropertyInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type PropertyAvailabilityUncheckedUpdateManyWithoutPropertyInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    date?: DateTimeFieldUpdateOperationsInput | Date | string
+    status?: StringFieldUpdateOperationsInput | string
+    price?: NullableIntFieldUpdateOperationsInput | number | null
+    notes?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
 
