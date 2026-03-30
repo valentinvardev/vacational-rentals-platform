@@ -73,3 +73,49 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Property {
+  id            Int               @id @default(autoincrement())
+  title         String
+  description   String?
+  address       String
+  price         Int
+  beds          Int
+  baths         Int
+  guests        Int
+  rating        Float?
+  reviews_count Int               @default(0)
+  type_name     String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  images        PropertyImage[]
+  amenities     PropertyAmenity[]
+  reviews       PropertyReview[]
+}
+
+model PropertyImage {
+  id         Int      @id @default(autoincrement())
+  url        String
+  is_primary Boolean  @default(false)
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int
+}
+
+model PropertyAmenity {
+  id         Int      @id @default(autoincrement())
+  name       String
+  icon       String?
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int
+}
+
+model PropertyReview {
+  id         Int      @id @default(autoincrement())
+  author     String
+  rating     Int
+  text       String
+  status     String   @default("approved")
+  created_at DateTime @default(now())
+  property   Property @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  propertyId Int
+}

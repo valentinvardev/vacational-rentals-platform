@@ -166,6 +166,46 @@ exports.Prisma.VerificationTokenScalarFieldEnum = {
   expires: 'expires'
 };
 
+exports.Prisma.PropertyScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  description: 'description',
+  address: 'address',
+  price: 'price',
+  beds: 'beds',
+  baths: 'baths',
+  guests: 'guests',
+  rating: 'rating',
+  reviews_count: 'reviews_count',
+  type_name: 'type_name',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.PropertyImageScalarFieldEnum = {
+  id: 'id',
+  url: 'url',
+  is_primary: 'is_primary',
+  propertyId: 'propertyId'
+};
+
+exports.Prisma.PropertyAmenityScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  icon: 'icon',
+  propertyId: 'propertyId'
+};
+
+exports.Prisma.PropertyReviewScalarFieldEnum = {
+  id: 'id',
+  author: 'author',
+  rating: 'rating',
+  text: 'text',
+  status: 'status',
+  created_at: 'created_at',
+  propertyId: 'propertyId'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -187,7 +227,11 @@ exports.Prisma.ModelName = {
   Account: 'Account',
   Session: 'Session',
   User: 'User',
-  VerificationToken: 'VerificationToken'
+  VerificationToken: 'VerificationToken',
+  Property: 'Property',
+  PropertyImage: 'PropertyImage',
+  PropertyAmenity: 'PropertyAmenity',
+  PropertyReview: 'PropertyReview'
 };
 
 /**
