@@ -1209,14 +1209,100 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero-slider-container { display: none; }
-  .hero-content { padding: 3rem 1.5rem; min-height: 70vh; }
-  .hero-title { font-size: clamp(2.25rem,8vw,3rem); }
+  /* ── Layout ── */
+  .hero {
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+  }
   .search-bar { grid-template-columns: 1fr; }
   .cards-grid { grid-template-columns: 1fr; }
   .map-sidebar { width: 100% !important; min-width: 100% !important; position: absolute; z-index: 20; top: 0; left: 0; height: 50%; }
   .map-layout { flex-direction: column; }
+
+  /* ── Slider becomes full-bleed background ── */
+  .hero-slider-container {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  /* Dark gradient overlay for legibility */
+  .hero-slider-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      160deg,
+      rgba(0,0,0,0.50) 0%,
+      rgba(0,0,0,0.35) 50%,
+      rgba(0,0,0,0.60) 100%
+    );
+    z-index: 1;
+  }
+  /* Dots hidden — clean glass UI, no distraction */
+  .hero-slider-dots { display: none; }
+
+  /* ── Content layer above background ── */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 3rem 1.25rem;
+    min-height: 100svh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  /* ── Glass card wrapping all content ── */
+  .hero-inner {
+    background: rgba(255,255,255,0.10);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 24px;
+    padding: 2rem 1.75rem;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.30);
+  }
+
+  /* ── Typography — white on landscape ── */
+  .hero-title {
+    font-size: clamp(2.25rem,8vw,3rem);
+    color: #fff;
+  }
+  .hero-title::after {
+    background: linear-gradient(90deg,var(--orange-primary),var(--orange-light));
+  }
+  .hero-subtitle { color: rgba(255,255,255,0.82); }
+
+  .hero-badge {
+    background: rgba(255,107,53,0.25);
+    border-color: rgba(255,107,53,0.55);
+    color: #fff;
+  }
+
+  /* ── Search bar — glass variant ── */
+  .hero-search {
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(255,255,255,0.28);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  }
+  .hero-search input { color: #fff; }
+  .hero-search input::placeholder { color: rgba(255,255,255,0.55); }
+
+  /* ── Outline button readable on dark bg ── */
+  .hero-content .btn-outline {
+    color: #fff;
+    border-color: rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.08);
+  }
+  .hero-content .btn-outline:hover {
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.65);
+  }
 }
 
 @media (max-width: 480px) {
